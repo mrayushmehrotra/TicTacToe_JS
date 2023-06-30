@@ -20,9 +20,10 @@ const checkWin = () =>{
     ]
     wins.forEach(e =>{
         if((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText) && (boxtext[e[0]].innerText !== '')){
-            document.querySelector(".info").innerText = boxtext[e[0]].innertext + "Won";
-        } else {
+            document.querySelector(".info").innerText = boxtext[e[0]].innerText + " Won";
             gameover = true;
+        } else {
+            null
         }
      })
 }
